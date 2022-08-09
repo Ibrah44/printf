@@ -7,6 +7,8 @@
 #include <stddef.h>
 #include <string.h>
 
+int _printf(const char *format, ...);
+
 /**
  * struct pr - struct for operations
  * @op: operation
