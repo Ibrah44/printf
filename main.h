@@ -1,6 +1,10 @@
 #ifndef MAINH
 #define MAINH
+#include <unistd.h>
+#include <stdlib.h>
 #include <stdarg.h>
+#include <stddef.h>
+#include <string.h>
 int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
