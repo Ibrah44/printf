@@ -1,10 +1,25 @@
 #ifndef MAINH
 #define MAINH
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stddef.h>
 #include <string.h>
+
+/**
+ * struct pr - struct for operations
+ * @op: operation
+ * @f: to be listed
+ *
+ * Description: Checks if there's an operation
+ */
+typedef struct pr
+{
+	char *op;
+	int (*f)(va_list);
+} pr_f;
+
 int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
